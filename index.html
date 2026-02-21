@@ -3,10 +3,123 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GitHub Pages -sivu</title>
+  <title>Diabetesinfo – Etusivu</title>
+  <meta name="description" content="Diabeteksesta kertova sivusto: tunnistaminen, asennukset, ihonhoito, laskuri, yhteydenotto ja linkit." />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
 </head>
+
 <body>
-  <h1>Sivu toimii</h1>
-  <p>Tämä sivu julkaistaan GitHub Pagesilla.</p>
+  <!-- Skip link (käytettävyys / saavutettavuus) -->
+  <a class="skip-link" href="#main">Siirry sisältöön</a>
+
+  <header class="site-header">
+    <!-- Yläbanneri / otsikkokuva toimii myös navigointina etusivulle -->
+    <a class="hero" href="index.html" aria-label="Siirry etusivulle">
+      <div class="hero__overlay">
+        <p class="hero__kicker">Diabetes</p>
+        <h1 class="hero__title">Tietoa, tunnistamista ja arjen tukea</h1>
+        <p class="hero__subtitle">Pohja rakennetaan ensin – sisältö lisätään myöhemmin.</p>
+      </div>
+    </a>
+
+    <div class="topbar">
+      <button class="menu-btn" id="menuBtn" aria-label="Avaa valikko" aria-controls="sideNav" aria-expanded="false">
+        <span class="menu-btn__icon" aria-hidden="true"></span>
+        <span class="menu-btn__text">Valikko</span>
+      </button>
+
+      <!-- Pieni “pikavalikko” desktopille (mobiilissa pääosin sivuvalikko) -->
+      <nav class="topnav" aria-label="Päänavigaatio">
+        <a href="index.html" aria-current="page">Etusivu</a>
+        <a href="laskuri.html">Laskuri</a>
+        <a href="yhteydenotto.html">Yhteydenotto</a>
+      </nav>
+    </div>
+
+    <!-- Breadcrumb (sijainti sivustolla) -->
+    <nav class="breadcrumb" aria-label="Sijainti sivustolla">
+      <ol>
+        <li><a href="index.html" aria-current="page">Etusivu</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <!-- Sivuvalikko -->
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <aside class="sidenav" id="sideNav" aria-label="Sivunavigaatio" aria-hidden="true">
+    <div class="sidenav__header">
+      <h2 class="sidenav__title">Navigointi</h2>
+      <button class="close-btn" id="closeBtn" aria-label="Sulje valikko">✕</button>
+    </div>
+
+    <nav class="sidenav__links">
+      <a href="index.html" aria-current="page">Etusivu</a>
+
+      <a href="tunnistaminen.html">Tunnistaminen</a>
+
+      <details>
+        <summary>Asennuksia</summary>
+        <div class="sublinks">
+          <a href="asennus-1.html">Asennus 1</a>
+          <a href="asennus-2.html">Asennus 2</a>
+          <a href="asennus-3.html">Asennus 3</a>
+        </div>
+      </details>
+
+      <a href="ihonhoito.html">Ihonhoito</a>
+      <a href="laskuri.html">Laskuri</a>
+      <a href="yhteydenotto.html">Yhteydenotto</a>
+
+      <details>
+        <summary>Linkkejä</summary>
+        <div class="sublinks">
+          <a href="#" target="_blank" rel="noopener">Palvelu 1 (lisätään myöhemmin)</a>
+          <a href="#" target="_blank" rel="noopener">Palvelu 2 (lisätään myöhemmin)</a>
+          <a href="#" target="_blank" rel="noopener">Palvelu 3 (lisätään myöhemmin)</a>
+        </div>
+      </details>
+
+      <a class="external" href="blogi.html" target="_blank" rel="noopener">
+        Blogi (uuteen välilehteen)
+      </a>
+    </nav>
+  </aside>
+
+  <main id="main" class="container">
+    <section class="grid">
+      <article class="card">
+        <h2>Tervetuloa</h2>
+        <p>
+          Tämä on etusivun peruspohja. Myöhemmin lisätään diabetekseen liittyvät tekstit ja kuvat.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Nopeat reitit</h2>
+        <ul class="quicklinks">
+          <li><a href="tunnistaminen.html">Tunnistaminen</a></li>
+          <li><a href="ihonhoito.html">Ihonhoito</a></li>
+          <li><a href="laskuri.html">Laskuri</a></li>
+          <li><a href="yhteydenotto.html">Yhteydenotto</a></li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Kuva-alue (placeholder)</h2>
+        <div class="placeholder" role="img" aria-label="Paikka kuvalle">
+          Kuva lisätään myöhemmin
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Diabetesinfo (opiskelutyö)</p>
+      <p><a href="yhteydenotto.html">Yhteydenotto</a></p>
+    </div>
+  </footer>
 </body>
 </html>
