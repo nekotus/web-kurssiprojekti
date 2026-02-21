@@ -204,17 +204,7 @@ a:hover{ text-decoration: underline; }
   border-radius: var(--radius);
   padding: 1rem;
 }
-.quicklinks{ margin: .5rem 0 0; padding-left: 1.2rem; }
-.placeholder{
-  border: 1px dashed var(--border);
-  border-radius: 14px;
-  padding: 1.25rem;
-  color: var(--muted);
-  min-height: 140px;
-  display: grid;
-  place-items: center;
-  text-align: center;
-}
+
 
 /* Footer */
 .site-footer{
