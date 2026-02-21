@@ -3,49 +3,47 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Diabetesinfo – Etusivu</title>
-  <meta name="description" content="Diabeteksesta kertova sivusto: tunnistaminen, asennukset, ihonhoito, laskuri, yhteydenotto ja linkit." />
+  <title>Diabetesinfo – Linkit</title>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="app.js"></script>
 </head>
 
 <body>
-  <!-- Skip link (käytettävyys / saavutettavuus) -->
   <a class="skip-link" href="#main">Siirry sisältöön</a>
 
   <header class="site-header">
-    <!-- Yläbanneri / otsikkokuva toimii myös navigointina etusivulle -->
     <a class="hero" href="index.html" aria-label="Siirry etusivulle">
       <div class="hero__overlay">
         <p class="hero__kicker">Diabetes</p>
-        <h1 class="hero__title">Tietoa, tunnistamista ja arjen tukea</h1>
-        <p class="hero__subtitle">Pohja rakennetaan ensin – sisältö lisätään myöhemmin.</p>
+        <h1 class="hero__title">Linkit</h1>
+        <p class="hero__subtitle">Hyödyllisiä ulkopuolisia palveluja</p>
       </div>
     </a>
 
     <div class="topbar">
-      <button class="menu-btn" id="menuBtn" aria-label="Avaa valikko" aria-controls="sideNav" aria-expanded="false">
+      <button class="menu-btn" id="menuBtn"
+              aria-label="Avaa valikko"
+              aria-controls="sideNav"
+              aria-expanded="false">
         <span class="menu-btn__icon" aria-hidden="true"></span>
         <span class="menu-btn__text">Valikko</span>
       </button>
 
-      <!-- Pieni “pikavalikko” desktopille (mobiilissa pääosin sivuvalikko) -->
       <nav class="topnav" aria-label="Päänavigaatio">
-        <a href="index.html" aria-current="page">Etusivu</a>
+        <a href="index.html">Etusivu</a>
         <a href="laskuri.html">Laskuri</a>
         <a href="yhteydenotto.html">Yhteydenotto</a>
       </nav>
     </div>
 
-    <!-- Breadcrumb (sijainti sivustolla) -->
     <nav class="breadcrumb" aria-label="Sijainti sivustolla">
       <ol>
-        <li><a href="index.html" aria-current="page">Etusivu</a></li>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="linkit.html" aria-current="page">Linkit</a></li>
       </ol>
     </nav>
   </header>
 
-  <!-- Sivuvalikko -->
   <div class="backdrop" id="backdrop" hidden></div>
 
   <aside class="sidenav" id="sideNav" aria-label="Sivunavigaatio" aria-hidden="true">
@@ -55,32 +53,52 @@
     </div>
 
 <nav class="sidenav__links">
-  <a href="index.html" aria-current="page">Etusivu</a>
+  <a href="index.html">Etusivu</a>
   <a href="tunnistaminen.html">Tunnistaminen</a>
   <a href="asennukset.html">Asennusohjeet</a>
   <a href="ihonhoito.html">Ihonhoito</a>
   <a href="laskuri.html">Laskuri</a>
-  <a href="linkit.html">Linkkejä</a>
+  <a href="linkit.html" aria-current="page">Linkkejä</a>
   <a href="blogi.html">Blogi</a>
   <a href="yhteydenotto.html">Yhteydenotto</a>
 </nav>
   </aside>
 
   <main id="main" class="container">
-   <section class="grid">
-  <article class="card">
-    <h2>Tervetuloa</h2>
-    <p>
-      Tämä on etusivun peruspohja. Myöhemmin lisätään diabetekseen liittyvät tekstit ja kuvat.
-    </p>
-  </article>
-</section>
+    <section class="grid">
+      <article class="card">
+        <h2>YouTube</h2>
+        <p>
+          <a href="#" target="_blank" rel="noopener">
+            Tästä YouTubeen
+          </a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Suomen Diabetesliitto</h2>
+        <p>
+          <a href="#" target="_blank" rel="noopener">
+            Tästä Suomen Diabetesliiton sivuille
+          </a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Terveyskirjasto</h2>
+        <p>
+          <a href="#" target="_blank" rel="noopener">
+            Tästä Terveyskirjastoon
+          </a>
+        </p>
+      </article>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> Diabetesinfo (opiskelutyö)</p>
-      <p><a href="yhteydenotto.html">Ota yhteyttä</a></p>
+      <p><a href="yhteydenotto.html">Yhteydenotto</a></p>
     </div>
   </footer>
 </body>
