@@ -205,7 +205,6 @@ a:hover{ text-decoration: underline; }
   padding: 1rem;
 }
 
-
 /* Footer */
 .site-footer{
   border-top: 1px solid var(--border);
@@ -225,4 +224,75 @@ a:hover{ text-decoration: underline; }
   .topnav{ display: inline-flex; }
   .grid{ grid-template-columns: 1.2fr .8fr; }
   .card:nth-child(3){ grid-column: 1 / -1; }
+}
+
+/* Blog center link */
+.blog-link-center{
+  min-height: 50vh;
+  display: grid;
+  place-items: center;
+}
+
+.blog-link{
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.04);
+  text-decoration: none;
+}
+
+.blog-link:hover{
+  text-decoration: underline;
+}
+
+.calc-field{
+  display: grid;
+  gap: .5rem;
+  margin-top: .75rem;
+}
+
+.calc-label{
+  font-weight: 600;
+}
+
+.calc-gap{
+  height: 1rem;
+}
+
+.calc-actions{
+  margin-top: 1rem;
+}
+
+input[type="number"],
+button{
+  font: inherit;
+}
+
+input[type="number"]{
+  width: min(420px, 100%);
+  padding: .6rem .75rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.04);
+  color: var(--text);
+  outline: none;
+}
+
+input[type="number"]::placeholder{
+  color: var(--muted);
+}
+
+button{
+  padding: .6rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.06);
+  color: var(--text);
+  cursor: pointer;
+}
+
+button:hover{
+  text-decoration: underline;
 }
