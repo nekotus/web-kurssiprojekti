@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diabetesinfo – Lähetin</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Siirry sisältöön</a>
+
+  <header class="site-header">
+    <a class="hero" href="index.html" aria-label="Siirry etusivulle">
+      <div class="hero__overlay">
+        <p class="hero__kicker">Diabetes</p>
+        <h1 class="hero__title">Lähetin</h1>
+        <p class="hero__subtitle">Asennus ja käyttö</p>
+      </div>
+    </a>
+
+    <div class="topbar">
+      <button class="menu-btn" id="menuBtn"
+              aria-label="Avaa valikko"
+              aria-controls="sideNav"
+              aria-expanded="false">
+        <span class="menu-btn__icon" aria-hidden="true"></span>
+        <span class="menu-btn__text">Valikko</span>
+      </button>
+
+      <nav class="topnav" aria-label="Päänavigaatio">
+        <a href="index.html">Etusivu</a>
+        <a href="laskuri.html">Laskuri</a>
+        <a href="yhteydenotto.html">Yhteydenotto</a>
+      </nav>
+    </div>
+
+    <nav class="breadcrumb" aria-label="Sijainti sivustolla">
+      <ol>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="asennukset.html">Asennusohjeet</a></li>
+        <li><a href="#" aria-current="page">Lähetin</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <aside class="sidenav" id="sideNav" aria-label="Sivunavigaatio" aria-hidden="true">
+    <div class="sidenav__header">
+      <h2 class="sidenav__title">Navigointi</h2>
+      <button class="close-btn" id="closeBtn" aria-label="Sulje valikko">✕</button>
+    </div>
+
+    <nav class="sidenav__links">
+      <a href="index.html">Etusivu</a>
+      <a href="tunnistaminen.html">Tunnistaminen</a>
+
+      <details open>
+        <summary>Asennuksia</summary>
+        <div class="sublinks">
+          <a href="sensori.html">Sensori</a>
+          <a href="lahetin.html" aria-current="page">Lähetin</a>
+          <a href="kanyyli.html">Kanyyli</a>
+        </div>
+      </details>
+
+      <a href="ihonhoito.html">Ihonhoito</a>
+      <a href="laskuri.html">Laskuri</a>
+      <a href="yhteydenotto.html">Yhteydenotto</a>
+
+      <details>
+        <summary>Linkkejä</summary>
+        <div class="sublinks">
+          <a href="#" target="_blank" rel="noopener">Palvelu 1</a>
+          <a href="#" target="_blank" rel="noopener">Palvelu 2</a>
+          <a href="#" target="_blank" rel="noopener">Palvelu 3</a>
+        </div>
+      </details>
+
+      <a class="external" href="blogi.html" target="_blank" rel="noopener">
+        Blogi
+      </a>
+    </nav>
+  </aside>
+
+  <main id="main" class="container">
+    <section class="grid">
+      <article class="card">
+        <h2>Asennusohjeet</h2>
+        <p>
+          Tähän lisätään lähettimen asennusohjeet myöhemmin.
+          Teksti voi sisältää vaiheita, vinkkejä ja huomioita.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Kuva</h2>
+        <div class="placeholder" role="img" aria-label="Lähettimen asennuskuva">
+          Kuva lisätään myöhemmin
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Diabetesinfo (opiskelutyö)</p>
+      <p><a href="yhteydenotto.html">Yhteydenotto</a></p>
+    </div>
+  </footer>
+</body>
+</html>
