@@ -14,35 +14,37 @@
   <a class="skip-link" href="#main">Siirry sisältöön</a>
 
   <header class="site-header">
-    <!-- Yläbanneri / otsikkokuva toimii myös navigointina etusivulle -->
-    <a class="hero" href="index.html" aria-label="Siirry etusivulle">
-      <div class="hero__overlay">
-        <p class="hero__kicker">Diabetes</p>
-        <h1 class="hero__title">Tietoa, tunnistamista ja arjen tukea</h1>
-        <p class="hero__subtitle">Pohja rakennetaan ensin – sisältö lisätään myöhemmin.</p>
-      </div>
+  <div class="hero">
+    <!-- Logo = linkki etusivulle -->
+    <a href="index.html" class="logo-link" aria-label="Siirry etusivulle">
+      <img src="images/tahtilogo.png" alt="Diabetesinfo-logo" class="site-logo">
     </a>
 
-    <div class="topbar">
-      <button class="menu-btn" id="menuBtn" aria-label="Avaa valikko" aria-controls="sideNav" aria-expanded="false">
-        <span class="menu-btn__icon" aria-hidden="true"></span>
-        <span class="menu-btn__text">Valikko</span>
-      </button>
-
-      <!-- Pieni “pikavalikko” desktopille (mobiilissa pääosin sivuvalikko) -->
-      <nav class="topnav" aria-label="Päänavigaatio">
-        <a href="index.html" aria-current="page">Etusivu</a>
-        <a href="laskuri.html">Laskuri</a>
-        <a href="yhteydenotto.html">Yhteydenotto</a>
-      </nav>
+    <!-- Bannerin teksti EI ole linkki -->
+    <div class="hero__overlay">
+      <p class="hero__kicker">Elämää diabeteksen kanssa</p>
+      <h1 class="hero__title"></h1>
+      <p class="hero__subtitle"></p>
     </div>
+  </div>
+
+  <div class="topbar">
+    <button class="menu-btn" id="menuBtn"
+            aria-label="Avaa valikko"
+            aria-controls="sideNav"
+            aria-expanded="false">
+      <span class="menu-btn__icon" aria-hidden="true"></span>
+      <span class="menu-btn__text">Valikko</span>
+    </button>
+
 
     <!-- Breadcrumb (sijainti sivustolla) -->
-    <nav class="breadcrumb" aria-label="Sijainti sivustolla">
+    <nav class="breadcrumb breadcrumb --topbar" aria-label="Sijainti sivustolla">
       <ol>
         <li><a href="index.html" aria-current="page">Etusivu</a></li>
       </ol>
     </nav>
+  </div>
   </header>
 
   <!-- Sivuvalikko -->
@@ -79,7 +81,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Diabetesinfo (opiskelutyö)</p>
+      <p>© <span id="year"></span> Projekti</p>
       <p><a href="yhteydenotto.html">Ota yhteyttä</a></p>
     </div>
   </footer>

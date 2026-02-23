@@ -1,9 +1,15 @@
 :root{
-  --bg: #0b0f14;
-  --surface: #121826;
-  --text: #e7eefc;
-  --muted: #b6c2da;
-  --border: rgba(231, 238, 252, 0.12);
+  --primary: #5b3a8e;
+  --accent:  #bcb4d8;
+
+
+  --bg: #0f0b17;
+  --surface: #171129;
+
+  --text: #d2cce4; 
+  --muted: #d2cce4;
+
+  --border: rgba(167,139,250,0.25);
   --shadow: 0 10px 30px rgba(0,0,0,.35);
   --radius: 16px;
 }
@@ -41,18 +47,26 @@ a:hover{ text-decoration: underline; }
 .site-header{ border-bottom: 1px solid var(--border); }
 
 .hero{
-  display: block;
-  min-height: 220px;
-  background:
-    linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.02)),
-    radial-gradient(800px 300px at 20% 20%, rgba(255,255,255,.12), transparent),
-    radial-gradient(700px 300px at 80% 30%, rgba(255,255,255,.10), transparent);
+    display: flex;
+  align-items: center;    
+  gap: 1.5rem;
+  padding: 2rem 1rem;
   position: relative;
+  min-height: 260px;
+
+  background-image:
+    linear-gradient(
+      rgba(15, 11, 23, 0.75),
+      rgba(15, 11, 23, 0.75)
+    ),
+    url("images/otsikkotausta.png");
+
+  background-size: auto;
+  background-position: center;
+  background-repeat: repeat;
 }
 .hero__overlay{
-  width: min(1100px, calc(100% - 2rem));
-  margin: 0 auto;
-  padding: 2rem 0;
+  margin: 0 ;
 }
 .hero__kicker{ margin: 0 0 .5rem; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; font-size: .85rem;}
 .hero__title{ margin: 0 0 .5rem; font-size: clamp(1.6rem, 3vw, 2.4rem); }
@@ -91,26 +105,24 @@ a:hover{ text-decoration: underline; }
   transform: translateY(-50%);
   border-top: 2px solid var(--text);
 }
-.topnav{
-  display: none;
-  gap: 1rem;
-  align-items: center;
-}
-.topnav a{
-  padding: .35rem .5rem;
-  border-radius: 10px;
-}
-.topnav a[aria-current="page"]{
-  background: rgba(255,255,255,.06);
-  border: 1px solid var(--border);
-}
+
 
 /* Breadcrumb */
 .breadcrumb{
-  width: min(1100px, calc(100% - 2rem));
-  margin: 0 auto;
-  padding: .25rem 0 1rem;
+  width: auto;
+  margin: 0;
+  padding: 0;
 }
+
+.breadcrumb--topbar ol{
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  row-gap: .25rem;
+}
+.breadcrumb--topbar ol{
+  font-size: .9rem;
+}
+
 .breadcrumb ol{
   list-style: none;
   display: flex;
@@ -295,4 +307,72 @@ button{
 
 button:hover{
   text-decoration: underline;
+}
+
+.logo-link{
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.site-logo{
+  height: 56px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 600px){
+  .site-logo{
+    height: 44px;
+  }
+}
+
+/* Linkit */
+a{
+  color: var(--accent);
+}
+a:hover{
+  text-decoration: underline;
+}
+
+/* Painikkeet */
+button{
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+button:hover{
+  filter: brightness(1.1);
+}
+
+/* Aktiivinen valikkolinkki */
+.sidenav__links a[aria-current="page"]{
+  background: rgba(167,139,250,0.15);
+  border-color: var(--accent);
+}
+
+/* Logo-alueen hienosäätö */
+.logo-link{
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* DESKTOP */
+.site-logo{
+  height: 96px;     /* <-- kasvatettu */
+  width: auto;
+  display: block;
+}
+
+/* TABLET */
+@media (max-width: 900px){
+  .site-logo{
+    height: 80px;
+  }
+}
+
+/* MOBIILI */
+@media (max-width: 600px){
+  .site-logo{
+    height: 64px;
+  }
 }

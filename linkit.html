@@ -11,37 +11,37 @@
 <body>
   <a class="skip-link" href="#main">Siirry sisältöön</a>
 
-  <header class="site-header">
-    <a class="hero" href="index.html" aria-label="Siirry etusivulle">
-      <div class="hero__overlay">
-        <p class="hero__kicker">Diabetes</p>
-        <h1 class="hero__title">Linkit</h1>
-        <p class="hero__subtitle">Hyödyllisiä ulkopuolisia palveluja</p>
-      </div>
+   <header class="site-header">
+  <div class="hero">
+   
+    <a href="index.html" class="logo-link" aria-label="Siirry etusivulle">
+      <img src="images/tahtilogo.png" alt="Diabetesinfo-logo" class="site-logo">
     </a>
 
-    <div class="topbar">
-      <button class="menu-btn" id="menuBtn"
-              aria-label="Avaa valikko"
-              aria-controls="sideNav"
-              aria-expanded="false">
-        <span class="menu-btn__icon" aria-hidden="true"></span>
-        <span class="menu-btn__text">Valikko</span>
-      </button>
-
-      <nav class="topnav" aria-label="Päänavigaatio">
-        <a href="index.html">Etusivu</a>
-        <a href="laskuri.html">Laskuri</a>
-        <a href="yhteydenotto.html">Yhteydenotto</a>
-      </nav>
+ 
+    <div class="hero__overlay">
+      <p class="hero__kicker">Diabetes</p>
+      <h1 class="hero__title"></h1>
+      <p class="hero__subtitle"></p>
     </div>
+  </div>
 
-    <nav class="breadcrumb" aria-label="Sijainti sivustolla">
+  <div class="topbar">
+    <button class="menu-btn" id="menuBtn"
+            aria-label="Avaa valikko"
+            aria-controls="sideNav"
+            aria-expanded="false">
+      <span class="menu-btn__icon" aria-hidden="true"></span>
+      <span class="menu-btn__text">Valikko</span>
+    </button>
+
+    <nav class="breadcrumb breadcrumb --topbar" aria-label="Sijainti sivustolla">
       <ol>
         <li><a href="index.html">Etusivu</a></li>
         <li><a href="linkit.html" aria-current="page">Linkit</a></li>
       </ol>
     </nav>
+  </div>
   </header>
 
   <div class="backdrop" id="backdrop" hidden></div>
@@ -97,7 +97,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Diabetesinfo (opiskelutyö)</p>
+      <p>© <span id="year"></span> Projekti</p>
       <p><a href="yhteydenotto.html">Yhteydenotto</a></p>
     </div>
   </footer>
