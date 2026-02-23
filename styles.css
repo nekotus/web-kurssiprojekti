@@ -381,3 +381,14 @@ img{
   max-width: 100%;
   height: auto;
 }
+
+.welcome-card{
+  max-width: 720px;     
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.welcome-card{
+  grid-column: 1 / -1;  /* vie koko rivin gridissä */
+}
