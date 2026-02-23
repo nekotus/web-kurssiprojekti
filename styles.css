@@ -352,8 +352,11 @@ button:hover{
 
 /* Logo-alueen hienosäätö */
 .logo-link{
-  display: inline-block;
-  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  width: auto;
+  margin: 0;  
 }
 
 .site-logo{
