@@ -373,7 +373,7 @@ button:hover{
 
 @media (max-width: 600px){
   .site-logo{
-    height: 56px;   /* pienempi mobiilissa */
+    height: 80px;   /* pienempi mobiilissa */
   }
 }
 
