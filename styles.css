@@ -12,6 +12,10 @@
   --border: rgba(167,139,250,0.25);
   --shadow: 0 10px 30px rgba(0,0,0,.35);
   --radius: 16px;
+
+   --green: #002A35;
+
+   --header-bg: #002A35;
 }
 
 * { box-sizing: border-box; }
@@ -74,6 +78,7 @@ a:hover{ text-decoration: underline; }
 
 /* TOP BAR */
 .topbar{
+     background-color: var(--header-bg);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -218,11 +223,23 @@ a:hover{ text-decoration: underline; }
 }
 
 /* Footer */
+
 .site-footer{
-  border-top: 1px solid var(--border);
-  padding: 1.25rem 0;
-  color: var(--muted);
+  background-color: var(--green);
+  padding: 1.25rem 1rem;
+  color: #eafff5;
+  border-top: none; /* poistetaan vanha viiva */
 }
+
+.site-footer a{
+  color: #f0fff9;
+  font-weight: 500;
+}
+
+.site-footer a:hover{
+  text-decoration: underline;
+}
+
 .footer-inner{
   display: flex;
   flex-wrap: wrap;
@@ -382,7 +399,7 @@ img{
   height: auto;
 }
 
-.welcome-card{
+.keski-card{
   max-width: 720px;     
   margin-left: auto;
   margin-right: auto;
@@ -391,4 +408,12 @@ img{
 
 .welcome-card{
   grid-column: 1 / -1;  /* vie koko rivin gridissä */
+}
+
+.install-card{
+  max-width: 720px;     /* sama leveys kuin etusivulla */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  grid-column: 1 / -1;  /* jos sivu käyttää grid-layoutia */
 }
