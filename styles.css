@@ -356,24 +356,21 @@ button:hover{
   margin-bottom: 1rem;
 }
 
-/* DESKTOP */
 .site-logo{
-  height: 96px;     /* <-- kasvatettu */
+  height: 96px;
   width: auto;
   display: block;
 }
 
-/* TABLET */
 @media (max-width: 900px){
   .site-logo{
     height: 80px;
   }
 }
 
-/* MOBIILI */
 @media (max-width: 600px){
   .site-logo{
-    height: 64px;
+    height: 56px;   /* pienempi mobiilissa */
   }
 }
 
